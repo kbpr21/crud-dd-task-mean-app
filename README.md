@@ -182,7 +182,3 @@ Go to GitHub repo → **Settings** → **Secrets and variables** → **Actions**
 - **Search** tutorials by title
 - **Update** tutorial details and published status
 - **Delete** individual or all tutorials
-
-## Important Note
-
-> The Azure VM infrastructure should be **stopped but not deleted** after completing the task, as it may be needed for a live demo in the next round.
