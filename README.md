@@ -62,7 +62,7 @@ Internet → Port 80 → [Nginx Reverse Proxy]
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/gr3y-hash/crud-dd-task-mean-app.git
+git clone https://github.com/kbpr21/crud-dd-task-mean-app.git
 cd crud-dd-task-mean-app
 ```
 
