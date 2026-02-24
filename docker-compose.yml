@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: mongodb
+    restart: unless-stopped
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - mean-network
+
+  backend:
+    image: bharathreddy25/mean-backend:latest
+    container_name: backend
+    restart: unless-stopped
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/dd_db
+      - PORT=8080
+    depends_on:
+      - mongodb
+    networks:
+      - mean-network
+
+  frontend:
+    image: bharathreddy25/mean-frontend:latest
+    container_name: frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    networks:
+      - mean-network
+
+  nginx:
+    build: ./nginx
+    container_name: nginx-proxy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - mean-network
+
+volumes:
+  mongo-data:
+
+
+networks:
+  mean-network:
+    driver: bridge
