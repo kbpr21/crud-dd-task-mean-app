@@ -145,25 +145,35 @@ Go to GitHub repo → **Settings** → **Secrets and variables** → **Actions**
 
 ## Screenshots
 
-<!-- Add your screenshots below -->
+### 1. GitHub Repository
+![GitHub Repo](screenshots/01-github-repo.png.png)
 
-### GitHub Repository
-<!-- ![GitHub Repo](screenshots/github-repo.png) -->
+### 2. CI/CD Pipeline — Successful Runs
+![CI/CD Success](screenshots/02-cicd-pipeline-success.png.png)
 
-### Docker Hub Images
-<!-- ![Docker Hub](screenshots/docker-hub.png) -->
+### 3. CI/CD — Build & Push Job Logs
+![Build Push Logs](screenshots/03-cicd-build-push-logs.png.png)
 
-### Application UI
-<!-- ![App UI](screenshots/app-ui.png) -->
+### 4. CI/CD — Deploy Job Logs
+![Deploy Logs](screenshots/04-cicd-deploy-logs.png.png)
 
-### Docker Compose Running
-<!-- ![Docker PS](screenshots/docker-ps.png) -->
+### 5. Docker Hub — Both Images
+![Docker Hub](screenshots/05-docker-hub-images.png.png)
 
-### Azure VM
-<!-- ![Azure VM](screenshots/azure-vm.png) -->
+### 6. Application UI — Working App
+![App UI](screenshots/06-app-ui-working.png.png)
 
-### CI/CD Pipeline
-<!-- ![CI/CD](screenshots/cicd-pipeline.png) -->
+### 7. Azure VM — Overview
+![Azure VM](screenshots/07-azure-vm-overview.png.png)
+
+### 8. VM — Docker Compose Running
+![Docker Compose PS](screenshots/08-vm-docker-compose-ps.png.png)
+
+### 9. Nginx Configuration
+![Nginx Config](screenshots/09-nginx-config.png.png)
+
+### 10. Azure Networking — Inbound Port Rules
+![Azure Networking](screenshots/10-azure-networking-ports.png.png)
 
 ## Application Features
 
